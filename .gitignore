@@ -1,0 +1,20 @@
+# Environments
+venv/
+.env
+
+# Credentials
+credentials/
+
+# Audio Files (Temporary & Generated)
+*.wav
+*.mp3
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node.js
+node_modules/
+.wwebjs_auth/
+.wwebjs_cache/

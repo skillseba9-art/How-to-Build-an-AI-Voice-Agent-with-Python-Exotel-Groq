@@ -1,0 +1,39 @@
+MODERN ACADEMY — SCHOOL KNOWLEDGE BASE
+Generated from Google Sheets on 2026-06-01 14:02
+This file is used by the AI Voice Agent (RAG system) to answer admission queries.
+============================================================
+
+==================================================
+== STUDENT ADMISSION DIRECTORY ==
+==================================================
+Admission ID: MA-2026-001. Student Name: Rohan Sharma. Parent Name: Amit Sharma. Contact Number: +919812344001. Assigned Class: Class 5. Section: A. Admission Date: 2026-03-15. Document Status: Completed. Assigned Counselor: Counselor Priya. Status: Active.
+Admission ID: MA-2026-002. Student Name: Sneha Verma. Parent Name: Rajesh Verma. Contact Number: +919812344002. Assigned Class: Class 11. Section: Science-B. Admission Date: 2026-04-02. Document Status: Pending TC. Assigned Counselor: Counselor Amit. Status: Active.
+Admission ID: MA-2026-003. Student Name: Aaryan Gupta. Parent Name: Vikram Gupta. Contact Number: +919812344003. Assigned Class: Class 1. Section: B. Admission Date: 2026-05-10. Document Status: Completed. Assigned Counselor: Counselor Priya. Status: Active.
+
+==================================================
+== FEE STRUCTURE ==
+==================================================
+Class: Class 1. Admission Fee (INR): 15000. Tuition Fee Quarterly (INR): 12000. Transport Fee Monthly (INR): 2000. Hostel Fee Annually (INR): 0. Scholarship Criteria: Sibling discount 10%.
+Class: Class 2. Admission Fee (INR): 15000. Tuition Fee Quarterly (INR): 12000. Transport Fee Monthly (INR): 2000. Hostel Fee Annually (INR): 0. Scholarship Criteria: Sibling discount 10%.
+Class: Class 3. Admission Fee (INR): 15000. Tuition Fee Quarterly (INR): 12000. Transport Fee Monthly (INR): 2000. Hostel Fee Annually (INR): 0. Scholarship Criteria: Sibling discount 10%.
+Class: Class 4. Admission Fee (INR): 15000. Tuition Fee Quarterly (INR): 14000. Transport Fee Monthly (INR): 2000. Hostel Fee Annually (INR): 0. Scholarship Criteria: Sibling discount 10%.
+Class: Class 5. Admission Fee (INR): 15000. Tuition Fee Quarterly (INR): 14000. Transport Fee Monthly (INR): 2000. Hostel Fee Annually (INR): 0. Scholarship Criteria: Sibling discount 10%.
+Class: Class 6. Admission Fee (INR): 20000. Tuition Fee Quarterly (INR): 18000. Transport Fee Monthly (INR): 2500. Hostel Fee Annually (INR): 60000. Scholarship Criteria: Merit based top 3 scorers.
+Class: Class 7. Admission Fee (INR): 20000. Tuition Fee Quarterly (INR): 18000. Transport Fee Monthly (INR): 2500. Hostel Fee Annually (INR): 60000. Scholarship Criteria: Merit based top 3 scorers.
+Class: Class 8. Admission Fee (INR): 20000. Tuition Fee Quarterly (INR): 18000. Transport Fee Monthly (INR): 2500. Hostel Fee Annually (INR): 60000. Scholarship Criteria: Merit based top 3 scorers.
+Class: Class 9. Admission Fee (INR): 25000. Tuition Fee Quarterly (INR): 22000. Transport Fee Monthly (INR): 3000. Hostel Fee Annually (INR): 65000. Scholarship Criteria: Sports quota active.
+Class: Class 10. Admission Fee (INR): 25000. Tuition Fee Quarterly (INR): 22000. Transport Fee Monthly (INR): 3000. Hostel Fee Annually (INR): 65000. Scholarship Criteria: Sports quota active.
+Class: Class 11. Admission Fee (INR): 30000. Tuition Fee Quarterly (INR): 26000. Transport Fee Monthly (INR): 3000. Hostel Fee Annually (INR): 70000. Scholarship Criteria: Above 90% in Board: 50% Tuition waiver.
+Class: Class 12. Admission Fee (INR): 30000. Tuition Fee Quarterly (INR): 26000. Transport Fee Monthly (INR): 3000. Hostel Fee Annually (INR): 70000. Scholarship Criteria: Above 90% in Board: 50% Tuition waiver.
+
+==================================================
+== KNOWLEDGE BASE MATRIX ==
+==================================================
+KB ID: KB-001. Category: Admission Timeline. Topic / Question: When does the admission process start and end?. Official Institutional Answer (Strict Data): Admissions for the academic year 2026-27 start on January 5th, 2026, and close on July 31st, 2026. Entrance exams are held every Saturday..
+KB ID: KB-002. Category: Documents Required. Topic / Question: What documents are required during admission?. Official Institutional Answer (Strict Data): Required documents: 1. Birth Certificate, 2. Previous School Transfer Certificate (TC), 3. Report Card, 4. 4 Passport-size photographs, 5. Parents' Aadhaar Card copy..
+KB ID: KB-003. Category: Affiliation & Curriculum. Topic / Question: Which board is the school affiliated with?. Official Institutional Answer (Strict Data): Modern Academy is fully affiliated with the CBSE (Central Board of Secondary Education), New Delhi, up to Senior Secondary level (Class 12)..
+KB ID: KB-004. Category: Timings. Topic / Question: What are the school operational hours?. Official Institutional Answer (Strict Data): Pre-Primary (Nursery to UKG): 8:30 AM to 12:30 PM. Primary & Secondary (Class 1 to 12): 8:00 AM to 2:15 PM. Saturdays are half-days (8:00 AM to 11:45 AM) for classes 6 to 12..
+KB ID: KB-005. Category: Transport Facility. Topic / Question: Do you provide school bus services?. Official Institutional Answer (Strict Data): Yes, we provide GPS-tracked AC school bus services covering a 15 km radius from the school campus. Every bus has a female attendant and CCTV surveillance..
+KB ID: KB-006. Category: Hostel / Boarding. Topic / Question: Is there a hostel facility available?. Official Institutional Answer (Strict Data): Hostel facilities are available exclusively for boys and girls from Class 6 onwards. It includes AC rooms, balanced veg/non-veg meals, and mandatory evening remedial classes..
+KB ID: KB-007. Category: Fee Installments. Topic / Question: Can fees be paid in monthly installments?. Official Institutional Answer (Strict Data): Standard tuition fees are collected Quarterly (4 terms per year). However, special approval can be requested from the Principal's office for monthly installments in case of financial urgency..
+KB ID: KB-008. Category: Co-Curricular. Topic / Question: What sports and extra activities are offered?. Official Institutional Answer (Strict Data): We offer professional coaching for Cricket, Football, Basketball, Swimming, and Chess. Additionally, we have dedicated clubs for Robotics, Classical Dance, Music, and Public Speaking..

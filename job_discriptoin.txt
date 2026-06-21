@@ -1,0 +1,475 @@
+Title:
+Create a production-grade AI Voice Calling Admission Agent workflow in JSON format using n8n.
+
+Description:
+"Create a production-grade AI Voice Calling Admission Agent workflow in JSON format using n8n.
+
+The workflow should be optimized for Indian school admission lead conversion with ultra-low latency Hindi + English conversational AI voice interaction.
+
+==================================================
+PROJECT CONTEXT
+===============
+
+Organization:
+Modern Academy
+
+Primary Goal:
+Increase student admissions through automated AI-powered outbound and inbound voice calling, lead nurturing, follow-ups, WhatsApp engagement, and CRM automation.
+
+The system should behave like a highly efficient AI admission counselor.
+
+This is NOT a demo workflow.
+
+The objective is to create a scalable, production-ready architecture.
+
+==================================================
+CORE OBJECTIVES
+===============
+
+The AI system should:
+
+1. Automatically pick student leads from Google Sheets
+2. Make outbound AI voice calls
+3. Handle inbound admission calls
+4. Speak naturally in Hindi and English
+5. Ask preferred language at beginning
+6. Answer queries strictly from knowledge base
+7. Convince parents/students for school visit
+8. Perform automated follow-ups
+9. Update Google Sheets CRM automatically
+10. Send WhatsApp messages automatically
+11. Escalate to human counselor when needed
+12. Maintain low latency and low operational cost
+
+==================================================
+TECH STACK
+==========
+
+Primary stack:
+
+1. n8n
+
+* Main orchestration engine
+
+2. Google Sheets
+
+* CRM storage
+* Lead source
+* Interaction logging
+
+3. Pinecone
+
+* Vector database
+
+4. Cohere
+
+* Embeddings
+
+5. GROQ
+
+* Main LLM reasoning engine
+* Extremely low latency important
+
+6. Sarvam AI
+
+* Speech-to-text
+* Text-to-speech
+* Hindi + English voice
+
+7. Telephony Provider
+   Choose best architecture among:
+
+* Exotel
+* Plivo
+* Vobiz
+
+Need low-latency real-time streaming support.
+
+8. WhatsApp API
+
+* Follow-ups
+* Brochure sending
+* Admission links
+* School location
+* Callback confirmations
+
+==================================================
+IMPORTANT ARCHITECTURE REQUIREMENTS
+===================================
+
+The workflow architecture MUST:
+
+1. Be modular
+2. Be scalable
+3. Be retry-safe
+4. Support async processing
+5. Handle concurrency properly
+6. Maintain state during conversations
+7. Use webhook-based architecture
+8. Support real-time streaming voice
+9. Support interruption handling
+10. Optimize latency aggressively
+
+Avoid blocking workflows wherever possible.
+
+n8n should mainly orchestrate:
+
+* automation
+* CRM updates
+* follow-ups
+* scheduling
+* webhooks
+* logging
+
+Real-time voice streaming logic should remain lightweight and optimized.
+
+==================================================
+LOW LATENCY REQUIREMENTS
+========================
+
+Target response delay:
+Under 1.5–2 seconds
+
+Optimize for:
+
+* streaming responses
+* fast STT/TTS
+* short AI replies
+* minimal token usage
+* efficient vector retrieval
+* lightweight prompts
+* low overhead architecture
+
+==================================================
+EXPECTED OPERATIONAL COST
+=========================
+
+Target AI conversation cost:
+
+Preferred:
+₹1.5 – ₹4 per conversation minute
+
+Acceptable:
+₹4 – ₹8 per minute
+
+The architecture should be optimized to achieve this.
+
+Include:
+
+* token optimization
+* silence timeout handling
+* short conversational replies
+* smart retry logic
+* streaming architecture
+* efficient embeddings retrieval
+
+==================================================
+OUTBOUND CALLING FLOW
+=====================
+
+The AI agent should:
+
+1. Fetch lead from Google Sheets
+
+2. Check:
+
+* already called?
+* follow-up pending?
+* retry allowed?
+* interested status?
+
+3. Initiate outbound call
+
+4. Start AI conversation
+
+5. Ask preferred language:
+
+* Hindi
+* English
+
+6. Introduce itself naturally as school admission assistant
+
+7. Capture:
+
+* parent name
+* student class
+* location
+* interest level
+* callback preference
+* budget sensitivity
+
+8. Answer admission-related questions strictly from KB
+
+9. Handle interruptions naturally
+
+10. Detect intent:
+
+* interested
+* highly interested
+* not interested
+* busy
+* call later
+* wrong number
+* parent unavailable
+* admission already done
+* wants human counselor
+
+11. Try to convert into:
+
+* school visit
+* callback booking
+* WhatsApp brochure acceptance
+
+12. Generate structured AI summary
+
+13. Store transcript and recording links
+
+14. Update CRM automatically
+
+15. Schedule follow-up intelligently
+
+==================================================
+INBOUND CALL FLOW
+=================
+
+When someone calls the school number:
+
+1. AI answers automatically
+
+2. Greets naturally
+
+3. Detects preferred language
+
+4. Handles admission queries
+
+5. Retrieves KB information using RAG
+
+6. Captures lead information
+
+7. Updates CRM in real time
+
+8. Escalates to human when:
+
+* AI uncertain
+* fee negotiation
+* angry parent
+* principal/admin request
+* complex query
+
+9. Maintains call context during escalation
+
+==================================================
+KNOWLEDGE BASE / RAG REQUIREMENTS
+=================================
+
+Knowledge base contains:
+
+* admission process
+* fee structure
+* facilities
+* transport
+* hostel
+* scholarship
+* timings
+* faculty
+* documents required
+* FAQs
+* achievements
+
+AI must answer STRICTLY from KB.
+
+Requirements:
+
+* Pinecone retrieval
+* Cohere embeddings
+* optimized chunking
+* low hallucination
+* source-aware answering
+* fast retrieval
+* relevance filtering
+
+==================================================
+CRM REQUIREMENTS
+================
+
+Use Google Sheets as CRM initially.
+
+Possible columns:
+
+Lead ID
+Student Name
+Parent Name
+Phone Number
+Class Interested
+Lead Source
+Lead Status
+Interest Level
+Call Status
+Call Outcome
+Preferred Language
+Last Call Date
+Last Call Time
+Next Follow-up Date
+Follow-up Count
+Interested In Visit
+WhatsApp Sent
+Brochure Sent
+Counselor Needed
+Assigned Counselor
+Admission Probability
+AI Summary
+Transcript Link
+Recording Link
+Call Duration
+Inbound/Outbound
+Converted
+Admission Completed
+
+Workflow should automatically update CRM after every interaction.
+
+==================================================
+FOLLOW-UP AUTOMATION
+====================
+
+Automate workflows such as:
+
+1. If “call later”
+   → auto callback scheduling
+
+2. If interested
+   → WhatsApp brochure
+
+3. If no answer
+   → retry logic
+
+4. If highly interested
+   → notify human counselor immediately
+
+5. If school visit scheduled
+   → reminder automation
+
+6. If inactive lead
+   → re-engagement workflow
+
+7. If WhatsApp link clicked
+   → trigger follow-up call
+
+==================================================
+WHATSAPP AUTOMATION
+===================
+
+Integrate WhatsApp API for:
+
+* brochure sending
+* school photos/videos
+* admission form links
+* Google Maps location
+* callback confirmations
+* visit reminders
+* counselor contact
+
+==================================================
+ANALYTICS & REPORTING
+=====================
+
+Workflow should support reporting for:
+
+* total calls
+* connected calls
+* conversion rate
+* interested leads
+* follow-up pending
+* admissions completed
+* average call duration
+* callback success
+* human transfer rate
+* lead quality
+
+==================================================
+IMPORTANT AI CONVERSATION RULES
+===============================
+
+The AI must:
+
+1. Sound conversational and natural
+
+2. Use short responses
+
+3. Avoid robotic speech
+
+4. Avoid long explanations
+
+5. Avoid hallucinations
+
+6. Stay strictly within KB
+
+7. Handle interruptions smoothly
+
+8. Maintain memory during call
+
+9. Prioritize school visit conversion
+
+10. Transfer to human if uncertain
+
+==================================================
+IMPORTANT IMPLEMENTATION REQUIREMENTS
+=====================================
+
+Need:
+
+* production-ready JSON workflow
+* reusable modular nodes
+* clean naming conventions
+* webhook architecture
+* proper environment variables
+* retry-safe logic
+* logging
+* error handling
+* timeout handling
+* concurrency handling
+* scalable deployment approach
+
+Include:
+
+* suggested APIs
+* suggested webhook structure
+* queue architecture if needed
+* deployment recommendation
+* server recommendations
+* scaling recommendations
+
+==================================================
+EXPECTED OUTPUT
+===============
+
+Generate:
+
+1. Full n8n JSON workflow
+
+2. Modular architecture
+
+3. Separate flows for:
+
+* outbound calls
+* inbound calls
+* follow-ups
+* WhatsApp automation
+* CRM updates
+* KB retrieval
+* escalation
+
+4. Production-ready node structure
+
+5. Proper comments/documentation
+
+6. Recommended environment variables
+
+7. Suggested deployment structure
+
+8. Suggestions for latency optimization
+
+9. Suggestions for cost optimization
+
+10. Suggestions for future scalability
+
+The workflow should be realistic, deployable, and optimized for real-world admission conversion use cases in India."

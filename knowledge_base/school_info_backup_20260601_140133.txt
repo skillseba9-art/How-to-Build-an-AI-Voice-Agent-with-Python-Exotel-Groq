@@ -1,0 +1,86 @@
+== FEE STRUCTURE ==
+(Source: Google Sheets — Last updated: 2026-06-01 13:58)
+
+Class: Class 1
+Admission Fee (INR): 15000
+Tuition Fee Quarterly (INR): 12000
+Transport Fee Monthly (INR): 2000
+Hostel Fee Annually (INR): 0
+Scholarship Criteria: Sibling discount 10%
+
+Class: Class 2
+Admission Fee (INR): 15000
+Tuition Fee Quarterly (INR): 12000
+Transport Fee Monthly (INR): 2000
+Hostel Fee Annually (INR): 0
+Scholarship Criteria: Sibling discount 10%
+
+Class: Class 3
+Admission Fee (INR): 15000
+Tuition Fee Quarterly (INR): 12000
+Transport Fee Monthly (INR): 2000
+Hostel Fee Annually (INR): 0
+Scholarship Criteria: Sibling discount 10%
+
+Class: Class 4
+Admission Fee (INR): 15000
+Tuition Fee Quarterly (INR): 14000
+Transport Fee Monthly (INR): 2000
+Hostel Fee Annually (INR): 0
+Scholarship Criteria: Sibling discount 10%
+
+Class: Class 5
+Admission Fee (INR): 15000
+Tuition Fee Quarterly (INR): 14000
+Transport Fee Monthly (INR): 2000
+Hostel Fee Annually (INR): 0
+Scholarship Criteria: Sibling discount 10%
+
+Class: Class 6
+Admission Fee (INR): 20000
+Tuition Fee Quarterly (INR): 18000
+Transport Fee Monthly (INR): 2500
+Hostel Fee Annually (INR): 60000
+Scholarship Criteria: Merit based top 3 scorers
+
+Class: Class 7
+Admission Fee (INR): 20000
+Tuition Fee Quarterly (INR): 18000
+Transport Fee Monthly (INR): 2500
+Hostel Fee Annually (INR): 60000
+Scholarship Criteria: Merit based top 3 scorers
+
+Class: Class 8
+Admission Fee (INR): 20000
+Tuition Fee Quarterly (INR): 18000
+Transport Fee Monthly (INR): 2500
+Hostel Fee Annually (INR): 60000
+Scholarship Criteria: Merit based top 3 scorers
+
+Class: Class 9
+Admission Fee (INR): 25000
+Tuition Fee Quarterly (INR): 22000
+Transport Fee Monthly (INR): 3000
+Hostel Fee Annually (INR): 65000
+Scholarship Criteria: Sports quota active
+
+Class: Class 10
+Admission Fee (INR): 25000
+Tuition Fee Quarterly (INR): 22000
+Transport Fee Monthly (INR): 3000
+Hostel Fee Annually (INR): 65000
+Scholarship Criteria: Sports quota active
+
+Class: Class 11
+Admission Fee (INR): 30000
+Tuition Fee Quarterly (INR): 26000
+Transport Fee Monthly (INR): 3000
+Hostel Fee Annually (INR): 70000
+Scholarship Criteria: Above 90% in Board: 50% Tuition waiver
+
+Class: Class 12
+Admission Fee (INR): 30000
+Tuition Fee Quarterly (INR): 26000
+Transport Fee Monthly (INR): 3000
+Hostel Fee Annually (INR): 70000
+Scholarship Criteria: Above 90% in Board: 50% Tuition waiver
